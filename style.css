@@ -1,67 +1,127 @@
+/* General Styles */
 body {
-    background-color: #121212;
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-}
-
-header {
-    background: rgba(30, 30, 30, 0.8);
-    padding: 20px;
-    text-align: center;
-    border-bottom: 2px solid #bb86fc;
-}
-
-h1, h2, h3 {
+    font-family: 'Arial', sans-serif; /* Modern font */
     margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background for the entire page */
+    color: #e0e0e0; /* Light text color for better contrast */
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #1e1e1e; /* Header background */
 }
 
 h1 {
-    font-size: 3rem;
-}
-
-h2 {
-    font-size: 2rem;
+    font-size: 2.5rem; /* Large title font size */
     color: #bb86fc; /* Accent color */
+    margin: 10px 0; /* Margin around the title */
 }
 
-section {
+p {
+    font-size: 1.2rem; /* Subtitle font size */
+}
+
+/* Profile Section */
+#profile {
+    padding: 20px;
+    background-color: #2c2c2c; /* Dark background for profile */
+    border-radius: 10px;
+    text-align: center; /* Center profile text */
+}
+
+.profile-image {
+    max-width: 150px; /* Profile image size */
+    border-radius: 50%; /* Circular profile image */
+}
+
+/* Skills Section */
+#skills {
+    padding: 20px;
+    background-color: #2c2c2c; /* Dark background for skills */
+    border-radius: 10px;
+}
+
+#skills ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+}
+
+/* Projects Section */
+#projects {
     padding: 40px 20px;
     margin: 20px 0;
-    background-color: #2c2c2c; 
+    background-color: #2c2c2c; /* Dark background for the section */
     border-radius: 10px;
+}
+
+.projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 30px; /* Space between items */
 }
 
 .project-card {
-    background: #1e1e1e;
+    background: #1e1e1e; /* Dark card background */
     border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease;
+    padding: 20px; /* Increased padding for a more spacious feel */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); /* Enhanced shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for shadow */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content */
+    text-align: center; /* Center text within cards */
+}
+
+.project-card img {
+    max-width: 100%; /* Ensure images fit the card */
+    border-radius: 10px; /* More pronounced rounded corners for images */
+    margin-bottom: 15px; /* Space below images */
+    transition: transform 0.3s ease; /* Smooth transition for image hover effect */
 }
 
 .project-card:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8); /* More pronounced shadow on hover */
 }
 
-button {
-    background-color: #bb86fc;
-    color: #ffffff;
-    padding: 15px 25px;
-    border-radius: 50px;
-    border: none;
-    transition: all 0.3s ease;
+.project-card:hover img {
+    transform: scale(1.05); /* Slight enlargement of image on hover */
 }
 
-button:hover {
-    background-color: #3700b3;
-    transform: scale(1.05);
+h2 {
+    text-align: center; /* Center the section title */
+    color: #bb86fc; /* Accent color */
+    margin-bottom: 20px; /* Space below the title */
+    font-size: 2rem; /* Larger font size for the title */
+    font-weight: bold; /* Bold title */
+    text-transform: uppercase; /* Uppercase for a modern look */
+    letter-spacing: 1px; /* Spacing between letters for elegance */
 }
 
-@media (max-width: 600px) {
-    section {
-        grid-template-columns: 1fr; /* Single column on smaller screens */
+/* Online Courses Section */
+#online-courses {
+    padding: 20px;
+    background-color: #2c2c2c; /* Dark background for courses */
+    border-radius: 10px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 20px;
+    background-color: #2c2c2c; /* Dark background for contact */
+    border-radius: 10px;
+    text-align: center; /* Center text in contact section */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Adjust header size on smaller screens */
+    }
+    p {
+        font-size: 1rem; /* Adjust paragraph size */
     }
 }
