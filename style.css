@@ -1,67 +1,83 @@
 body {
-    background-color: #121212;
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text color */
+    font-family: 'Poppins', sans-serif; /* Modern font */
 }
 
 header {
-    background: rgba(30, 30, 30, 0.8);
+    background: rgba(30, 30, 30, 0.8); /* Semi-transparent header */
     padding: 20px;
     text-align: center;
-    border-bottom: 2px solid #bb86fc;
+    border-bottom: 2px solid #bb86fc; /* Accent border */
 }
 
 h1, h2, h3 {
-    margin: 0;
+    margin: 0; /* Remove default margins */
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 3rem; /* Large title font size */
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2rem; /* Subtitle font size */
     color: #bb86fc; /* Accent color */
 }
 
 section {
-    padding: 40px 20px;
-    margin: 20px 0;
-    background-color: #2c2c2c; 
-    border-radius: 10px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+    padding: 40px 20px; /* Section padding */
+    margin: 20px 0; /* Margin around sections */
+    background-color: #2c2c2c; /* Section background */
+    border-radius: 10px; /* Rounded corners */
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between items */
 }
 
 .project-card {
-    background: #1e1e1e;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease;
+    background: #1e1e1e; /* Card background */
+    border-radius: 10px; /* Rounded corners for cards */
+    padding: 15px; /* Padding inside cards */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+    text-align: center; /* Center text inside cards */
 }
 
 .project-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Scale effect on hover */
 }
 
 button {
-    background-color: #bb86fc;
-    color: #ffffff;
-    padding: 15px 25px;
-    border-radius: 50px;
-    border: none;
-    transition: all 0.3s ease;
+    background-color: #bb86fc; /* Button background */
+    color: #ffffff; /* Button text color */
+    padding: 15px 25px; /* Button padding */
+    border-radius: 50px; /* Rounded button */
+    border: none; /* Remove default border */
+    transition: all 0.3s ease; /* Smooth transition */
+    cursor: pointer; /* Pointer cursor for buttons */
 }
 
 button:hover {
-    background-color: #3700b3;
-    transform: scale(1.05);
+    background-color: #3700b3; /* Darker color on hover */
+    transform: scale(1.05); /* Slight enlargement on hover */
 }
 
 @media (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem; /* Adjust header size for smaller screens */
+    }
+    h2 {
+        font-size: 1.5rem; /* Adjust subtitle size */
+    }
     section {
+        padding: 20px; /* Less padding on smaller screens */
+        margin: 10px 0; /* Less margin on smaller screens */
         grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+    .project-card {
+        padding: 10px; /* Less padding for cards */
+    }
+    button {
+        padding: 10px 20px; /* Less padding for buttons */
     }
 }
