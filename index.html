@@ -1,110 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Durraiyah Muneer - Data Analyst Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Durraiyah Muneer</h1>
-        <p>Data Analyst | Cloud Data Engineer | Research Analyst</p>
-    </header>
-    
-    <section id="profile">
-        <h2>Profile</h2>
-        <img src="images/profile.jpg" alt="Durraiyah Muneer" class="profile-image">
-        <p>Dedicated data analyst with hands-on experience in data visualization, and data analysis and cloud computing. Passionate about leveraging data-driven insights to drive business decisions and enhance operational efficiency.</p>
-    </section>
+body {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text color */
+    font-family: 'Poppins', sans-serif; /* Modern font */
+}
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Data Analysis: SQL, Excel, Python (Pandas, NumPy)</li>
-            <li>Advanced Data Analytics with Google Cloud Platform</li>
-            <li>Data Visualization: Tableau, Power BI, Matplotlib, Seaborn</li>
-            <li>Machine Learning & Modeling: Scikit-learn (predictive modeling, clustering)</li>
-            <li>Programming Languages: Python, Java, C++, C#</li>
-            <li>Web Development: Django, Flask, FastAPI, HTML, CSS, JavaScript</li>
-            <li>Data Engineering: Apache Kafka, Apache Spark, ETL Processes</li>
-            <li>Platforms & Tools: Google Cloud Platform, Git, GitHub, Kaggle</li>
-        </ul>
-    </section>
+header {
+    background: rgba(30, 30, 30, 0.8); /* Semi-transparent header */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #bb86fc; /* Accent border */
+}
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                <strong>Desktop-Based ETL Tool:</strong> Designed and implemented a desktop-based ETL tool in Java to extract, transform, and load data from various sources into target databases, streamlining data integration processes for users.
-                <img src="images/etl_tool.webp" alt="Desktop-Based ETL Tool" class="project-image" style="max-width: 300px; height: auto;">
+h1, h2, h3 {
+    margin: 0; /* Remove default margins */
+}
 
-            </li>
-            <li>
-                <strong>Room Occupancy Detector:</strong> Developed a real-time monitoring system with data streaming and occupancy prediction models using Django, Flask, and FastAPI to analyze room utilization for effective space management.
-                <img src="images/occupancy.jpg" alt="Room Occupancy Detector" class="project-image" style="max-width: 300px; height: auto;">
-            </li>
-            <li>
-                <strong>HTML Autocorrection Tool:</strong> Created a tool using JavaScript that automatically detects and suggests corrections for common HTML errors, improving web development efficiency.
-                <img src="images/HTML.webp" alt="HTML Autocorrection Tool" class="project-image" style="max-width: 300px; height: auto;">
-            </li>
-            <li>
-                <strong>Sales Data Analysis Dashboard:</strong> Developed an interactive dashboard in Power BI to analyze sales data, identifying key sales trends, seasonal patterns, and high-performing product categories, enabling data-driven decision-making for stakeholders.
-                <img src="images/sales.webp" alt="Sales Data Analysis Dashboard" class="project-image" style="max-width: 300px; height: auto;">
-            </li>
-            <li>
-                <strong>HR Employee Attrition Dashboard:</strong> Built an HR analytics dashboard in Tableau to visualize employee attrition rates, analyze key factors affecting turnover, and highlight insights on demographics, job satisfaction, and tenure, supporting HR retention strategies.
-                <img src="images/hr-attrition.webp" alt="HR Employee Attrition Dashboard" class="project-image" style="max-width: 300px; height: auto;">
-            </li>
-            <li>
-                <strong>Diabetes Prediction Dashboard:</strong> Created a machine learning-powered dashboard using Python (Pandas, scikit-learn) and Power BI to predict diabetes risk based on patient data, aiding healthcare professionals in early intervention.
-                <img src="images/Diabeted.png" alt="Diabetes Prediction Dashboard" class="project-image" style="max-width: 300px; height: auto;">
-            </li>
-            <li>
-                <strong>Customer Segmentation Analysis:</strong> Applied clustering algorithms and data visualization techniques to segment customers based on purchasing behavior, helping design targeted marketing campaigns.
-                <img src="images/Customer.jfif" alt="Customer Segmentation Analysis" class="project-image" style="max-width: 300px; height: auto;">
-            </li>
-            <li>
-                <strong>Sales Forecasting Model:</strong> Conducted time-series analysis and forecasting using Python (Pandas, statsmodels) to predict future sales trends, optimizing inventory levels and reducing stockouts for an e-commerce platform.
-                <img src="images/sales_fore.jfif" alt="Sales Forecasting Model" class="project-image" style="max-width: 300px; height: auto;">
-            </li>
-            <li>
-                <strong>Infant Guard - Baby Monitoring System:</strong> Developed a smart monitoring system using IoT technologies to track baby movements and provide alerts for caregivers, enhancing child safety.
-                <img src="images/infant.jfif" alt="Infant Guard - Baby Monitoring System" class="project-image" style="max-width: 300px; height: auto;">
-            </li>
-        </ul>
-    </section>
+h1 {
+    font-size: 3rem; /* Large title font size */
+}
 
-    <section id="online-courses">
-        <h2>Online Courses</h2>
-        <p>Completed several online courses to enhance skills and knowledge, including:</p>
-        <ul>
-            <li>Google Advanced Data Analytics Professional Course</li>
-            <li>Kaggle Courses: Various data science and machine learning courses</li>
-            <li>Coursera Courses: Including [insert specific course names or topics]</li>
-            <li>DataCamp Courses: Focused on data analysis and visualization techniques</li>
-            <li>HackerRank: Engaged in coding challenges to improve programming skills</li>
-            <li>LeetCode: Practiced algorithm and data structure problems to prepare for technical interviews</li>
-        </ul>
-    </section>
+h2 {
+    font-size: 2rem; /* Subtitle font size */
+    color: #bb86fc; /* Accent color */
+}
 
-    <section id="kaggle">
-        <h2>Kaggle Competitions</h2>
-        <p>Participated in various Kaggle competitions, applying data analysis and machine learning skills to real-world datasets. Developed predictive models and data visualizations that have been recognized within the community.</p>
-    </section>
+section {
+    padding: 40px 20px; /* Section padding */
+    margin: 20px 0; /* Margin around sections */
+    background-color: #2c2c2c; /* Section background */
+    border-radius: 10px; /* Rounded corners */
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between items */
+}
 
-    <section id="volunteer-work">
-        <h2>Volunteer Work</h2>
-        <p>Offered data analysis services to local non-profits and small businesses, helping them derive insights from their data. Engaged in community workshops to enhance data literacy.</p>
-    </section>
+.project-card {
+    background: #1e1e1e; /* Card background */
+    border-radius: 10px; /* Rounded corners for cards */
+    padding: 15px; /* Padding inside cards */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+    text-align: center; /* Center text inside cards */
+}
 
-    
+.project-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:durraiyahmuneeruddin@gmail.com">durraiyahmuneeruddin@gmail.com</a></p>
-        <p>Kaggle: <a href="https://www.kaggle.com/durraiyahmuneeruddin" target="_blank">Kaggle Profile</a></p>
-        <p>Phone: 00923152385250 </p>
-    </section>
-</body>
-</html>
+button {
+    background-color: #bb86fc; /* Button background */
+    color: #ffffff; /* Button text color */
+    padding: 15px 25px; /* Button padding */
+    border-radius: 50px; /* Rounded button */
+    border: none; /* Remove default border */
+    transition: all 0.3s ease; /* Smooth transition */
+    cursor: pointer; /* Pointer cursor for buttons */
+}
+
+button:hover {
+    background-color: #3700b3; /* Darker color on hover */
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem; /* Adjust header size for smaller screens */
+    }
+    h2 {
+        font-size: 1.5rem; /* Adjust subtitle size */
+    }
+    section {
+        padding: 20px; /* Less padding on smaller screens */
+        margin: 10px 0; /* Less margin on smaller screens */
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+    .project-card {
+        padding: 10px; /* Less padding for cards */
+    }
+    button {
+        padding: 10px 20px; /* Less padding for buttons */
+    }
+}
