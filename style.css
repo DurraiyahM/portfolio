@@ -1,120 +1,67 @@
-/* General Styles */
 body {
-    font-family: 'Arial', sans-serif; /* Modern font */
-    margin: 0;
-    padding: 0;
-    background-color: #121212; /* Dark background for the entire page */
-    color: #e0e0e0; /* Light text color for better contrast */
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Header Styles */
 header {
+    background: rgba(30, 30, 30, 0.8);
+    padding: 20px;
     text-align: center;
-    padding: 20px 0;
-    background-color: #1e1e1e; /* Header background */
+    border-bottom: 2px solid #bb86fc;
+}
+
+h1, h2, h3 {
+    margin: 0;
 }
 
 h1 {
-    font-size: 2.5rem; /* Large title font size */
-    color: #bb86fc; /* Accent color */
-    margin: 10px 0; /* Margin around the title */
-}
-
-p {
-    font-size: 1.2rem; /* Subtitle font size */
-}
-
-/* Profile Section */
-#profile {
-    padding: 20px;
-    background-color: #2c2c2c; /* Dark background for profile */
-    border-radius: 10px;
-    text-align: center; /* Center profile text */
-}
-
-.profile-image {
-    max-width: 150px; /* Profile image size */
-    border-radius: 50%; /* Circular profile image */
-}
-
-/* Skills Section */
-#skills {
-    padding: 20px;
-    background-color: #2c2c2c; /* Dark background for skills */
-    border-radius: 10px;
-}
-
-#skills ul {
-    list-style: none; /* Remove bullet points */
-    padding: 0;
-}
-
-/* Projects Section */
-#projects {
-    padding: 40px 20px;
-    margin: 20px 0;
-    background-color: #2c2c2c; /* Dark background for the section */
-    border-radius: 10px;
-}
-
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
-    gap: 30px; /* Space between items */
-}
-
-.project-card {
-    background: #1e1e1e; /* Dark card background */
-    border-radius: 10px;
-    padding: 15px; /* Padding for the card */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Enhanced shadow for depth */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for shadow */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center content */
-    text-align: center; /* Center text within cards */
-}
-
-.project-card img {
-    max-width: 100%; /* Ensure images fit the card */
-    border-radius: 8px; /* More pronounced rounded corners for images */
-    margin-bottom: 10px; /* Space below images */
-}
-
-.project-card:hover {
-    transform: scale(1.03); /* Slight enlargement on hover */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* More pronounced shadow on hover */
+    font-size: 3rem;
 }
 
 h2 {
-    text-align: center; /* Center the section title */
+    font-size: 2rem;
     color: #bb86fc; /* Accent color */
-    margin-bottom: 20px; /* Space below the title */
-    font-size: 2rem; /* Larger font size for the title */
-    font-weight: bold; /* Bold title */
 }
 
-/* Online Courses Section */
-#online-courses {
-    padding: 20px;
-    background-color: #2c2c2c; /* Dark background for courses */
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+    background-color: #2c2c2c; 
     border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
 }
 
-/* Contact Section */
-#contact {
-    padding: 20px;
-    background-color: #2c2c2c; /* Dark background for contact */
+.project-card {
+    background: #1e1e1e;
     border-radius: 10px;
-    text-align: center; /* Center text in contact section */
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2rem; /* Adjust header size on smaller screens */
-    }
-    p {
-        font-size: 1rem; /* Adjust paragraph size */
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+button {
+    background-color: #bb86fc;
+    color: #ffffff;
+    padding: 15px 25px;
+    border-radius: 50px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #3700b3;
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    section {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
     }
 }
