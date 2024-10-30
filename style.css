@@ -1,35 +1,45 @@
 body {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text */
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
 }
+
 header {
+    background-color: #1e1e1e; /* Header background */
+    padding: 20px;
     text-align: center;
-    padding: 2em 0;
-    background-color: #0044cc;
-    color: #fff;
 }
+
 h1, h2 {
-    color: #333;
+    color: #e0e0e0; /* Light headings */
 }
-section {
-    margin: 2em auto;
-    padding: 1em;
-    max-width: 800px;
+
+p {
+    color: #b0b0b0; /* Slightly lighter text */
 }
+
 ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: none; /* Remove bullets */
 }
-ul li {
-    margin: 0.5em 0;
-}
+
 a {
-    color: #0044cc;
-    text-decoration: none;
+    color: #bb86fc; /* Link color */
 }
+
 a:hover {
-    text-decoration: underline;
+    color: #3700b3; /* Hover effect */
+}
+
+.profile-image,
+.project-image {
+    border: 2px solid #bb86fc; /* Light border around images */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Additional styles for sections */
+section {
+    background-color: #1e1e1e; /* Section background */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px; /* Rounded corners for sections */
 }
